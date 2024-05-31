@@ -1,9 +1,22 @@
 version: 0.2
 
 phases:
+  install:
+    commands:
+      - echo "No installation needed"
+
+  pre_build:
+    commands:
+      - echo "No pre-build steps"
+
   build:
     commands:
-      - npm i --save
+      - echo "No build steps"
+
+  post_build:
+    commands:
+      - echo "Preparing for deployment"
+
 artifacts:
   files:
-    - '*/*'
+    - '**/*'
